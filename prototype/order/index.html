@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order | JK Brands Health and Wellness</title>
+<meta name="description" content="Prototype page with placeholder content.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="proto-bar"><div class="wrap"><span>Prototype: placeholder content, no backend. Currency shown as XXX until confirmed.</span><span><a href="../flow.html">Review map</a></span></div></div>
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <a class="brand" href="../index.html"><span class="brand__mark" aria-hidden="true">JK</span><span class="brand__text">JK Brands<small>Health and Wellness</small></span></a>
+    <nav class="site-nav" aria-label="Primary"><ul><li><a href="../index.html">Home</a></li><li><a href="../products/index.html">Products</a></li><li><a href="../wellness/index.html">Wellness</a></li><li><a href="../about/index.html">About Us</a></li><li><a href="../testimonials/index.html">Testimonials</a></li><li><a href="../wholesale/index.html">Wholesale</a></li><li><a href="../contact/index.html">Contact Us</a></li><li><a class="btn" href="../order/index.html" aria-current="page">Order</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / Order</nav><h1>Order</h1><p>Choose your products and quantities, then tell us where to deliver. No account needed.</p></div></section>
+<section class="section"><div class="wrap layout-side">
+<form action="../order/confirmation/index.html" method="get">
+  <p class="notice">Quantities are the amounts you want to order. Availability, shipping and final payment details are confirmed by our team after you submit.</p>
+  <p class="small muted">Prototype: quantities and totals are static sample values. Use the Submit button to see the confirmation page.</p>
+  <fieldset><legend>1. Products and quantities</legend>
+    <div class="table-wrap" style="margin-bottom:16px"><table>
+      <thead><tr><th scope="col">Product</th><th scope="col" class="num">Retail price</th><th scope="col">Quantity</th><th scope="col" class="num">Line subtotal</th></tr></thead>
+      <tbody><tr><td><strong>Gaiavita</strong><br><span class="muted small">Daily Wellness</span></td><td class="num">XXX 450.00</td><td><label class="small" for="qty-gaiavita" style="display:none">Quantity for Gaiavita</label><input id="qty-gaiavita" name="qty-gaiavita" type="number" min="0" max="20" step="1" value="2" aria-label="Quantity for Gaiavita"></td><td class="num">XXX 900.00</td></tr><tr><td><strong>Penta Herbs</strong><br><span class="muted small">Digestive Support</span></td><td class="num">XXX 520.00</td><td><label class="small" for="qty-penta-herbs" style="display:none">Quantity for Penta Herbs</label><input id="qty-penta-herbs" name="qty-penta-herbs" type="number" min="0" max="20" step="1" value="1" aria-label="Quantity for Penta Herbs"></td><td class="num">XXX 520.00</td></tr><tr><td><strong>Rushin</strong><br><span class="muted small">Joint and Muscle Comfort</span></td><td class="num">XXX 495.00</td><td><label class="small" for="qty-rushin" style="display:none">Quantity for Rushin</label><input id="qty-rushin" name="qty-rushin" type="number" min="0" max="20" step="1" value="0" aria-label="Quantity for Rushin"></td><td class="num">XXX 0.00</td></tr><tr><td><strong>Poffee Kopi</strong><br><span class="muted small">Herbal Drinks, Daily Wellness</span></td><td class="num">XXX 380.00</td><td><label class="small" for="qty-poffee-kopi" style="display:none">Quantity for Poffee Kopi</label><input id="qty-poffee-kopi" name="qty-poffee-kopi" type="number" min="0" max="20" step="1" value="0" aria-label="Quantity for Poffee Kopi"></td><td class="num">XXX 0.00</td></tr><tr><td><strong>Shindo Oil</strong><br><span class="muted small">Joint and Muscle Comfort</span></td><td class="num">XXX 560.00</td><td><label class="small" for="qty-shindo-oil" style="display:none">Quantity for Shindo Oil</label><input id="qty-shindo-oil" name="qty-shindo-oil" type="number" min="0" max="20" step="1" value="0" aria-label="Quantity for Shindo Oil"></td><td class="num">XXX 0.00</td></tr></tbody>
+    </table></div>
+    <p class="hint">Whole numbers, 0 to 20 per product. At least one product is required.</p>
+  </fieldset>
+  <fieldset><legend>2. Your details</legend>
+    <div class="field"><label for="name">Full name <span class="req">*</span></label><input id="name" name="name" required autocomplete="name"></div>
+    <div class="row-2">
+      <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="phone">Mobile number <span class="req">*</span></label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+    </div>
+  </fieldset>
+  <fieldset><legend>3. Delivery address</legend>
+    <div class="field"><label for="street">Street address <span class="req">*</span></label><input id="street" name="street" required autocomplete="street-address"></div>
+    <div class="row-3">
+      <div class="field"><label for="city">City or municipality <span class="req">*</span></label><input id="city" name="city" required></div>
+      <div class="field"><label for="region">Province or region <span class="req">*</span></label><input id="region" name="region" required></div>
+      <div class="field"><label for="postal">Postal code</label><input id="postal" name="postal"></div>
+    </div>
+  </fieldset>
+  <fieldset><legend>4. Payment preference</legend>
+    <div class="choice" role="radiogroup" aria-label="Payment preference">
+      <label><input type="radio" name="payment" value="a" required> Payment option A (placeholder)</label>
+      <label><input type="radio" name="payment" value="b"> Payment option B (placeholder)</label>
+      <label><input type="radio" name="payment" value="c"> Payment option C (placeholder)</label>
+    </div>
+    <p class="hint">This is a preference only. We confirm final payment details with you.</p>
+  </fieldset>
+  <fieldset><legend>5. Special instructions</legend>
+    <div class="field"><label for="notes">Notes for delivery or your order (optional)</label><textarea id="notes" name="notes"></textarea></div>
+  </fieldset>
+  <div class="field choice"><label><input type="checkbox" name="consent" required> I have read the <a href="../privacy/index.html">Privacy Notice</a> and agree that JK Brands may use my details to process this order. <span class="req">*</span></label></div>
+  <button class="btn" type="submit">Submit order</button>
+</form>
+<aside class="summary" aria-label="Order summary">
+  <h2 style="font-size:1.2rem">Order summary</h2>
+  <dl><div><dt>Gaiavita &times; 2</dt><dd>XXX 900.00</dd></div><div><dt>Penta Herbs &times; 1</dt><dd>XXX 520.00</dd></div>
+    <div class="total"><dt>Estimated subtotal</dt><dd>XXX 1,420.00</dd></div>
+  </dl>
+  <p class="small muted" style="margin-top:12px">Shipping fees and any minimum order are not included. They will be confirmed by our team.</p>
+</aside>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="../index.html"><span class="brand__mark" aria-hidden="true">JK</span><span class="brand__text">JK Brands<small>Health and Wellness</small></span></a>
+      <p>&copy; 2026 All rights reserved.</p>
+    </div>
+    <nav aria-label="Footer"><ul class="footer-links">
+      <li><a href="../index.html">Home</a></li><li><a href="../about/index.html">About Us</a></li><li><a href="../products/index.html">Products</a></li>
+      <li><a href="../wellness/index.html">Wellness</a></li><li><a href="../testimonials/index.html">Testimonials</a></li><li><a href="../wholesale/index.html">Wholesale</a></li>
+      <li><a href="../contact/index.html">Contact Us</a></li><li><a href="../privacy/index.html">Privacy Notice</a></li><li><a href="../terms/index.html">Terms</a></li>
+    </ul></nav>
+    <ul class="social" aria-label="Social links (placeholders)">
+      <li><a href="#" aria-label="Facebook">f</a></li><li><a href="#" aria-label="Instagram">ig</a></li><li><a href="#" aria-label="LinkedIn">in</a></li><li><a href="#" aria-label="TikTok">tt</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../assets/motion.js" defer></script>
+</body>
+</html>

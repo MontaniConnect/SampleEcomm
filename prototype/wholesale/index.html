@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wholesale and Reseller Inquiries | JK Brands Health and Wellness</title>
+<meta name="description" content="Prototype page with placeholder content.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="proto-bar"><div class="wrap"><span>Prototype: placeholder content, no backend. Currency shown as XXX until confirmed.</span><span><a href="../flow.html">Review map</a></span></div></div>
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <a class="brand" href="../index.html"><span class="brand__mark" aria-hidden="true">JK</span><span class="brand__text">JK Brands<small>Health and Wellness</small></span></a>
+    <nav class="site-nav" aria-label="Primary"><ul><li><a href="../index.html">Home</a></li><li><a href="../products/index.html">Products</a></li><li><a href="../wellness/index.html">Wellness</a></li><li><a href="../about/index.html">About Us</a></li><li><a href="../testimonials/index.html">Testimonials</a></li><li><a href="../wholesale/index.html" aria-current="page">Wholesale</a></li><li><a href="../contact/index.html">Contact Us</a></li><li><a class="btn" href="../order/index.html">Order</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / Wholesale and Reseller Inquiries</nav><h1>Wholesale and Reseller Inquiries</h1><p>Tell us about your business and we will follow up with wholesale details.</p></div></section>
+<section class="section"><div class="wrap layout-side">
+<div>
+  <div id="received" class="notice notice--ok notice--hidden" role="status"><strong>Inquiry received.</strong> Thank you. Our team will follow up by email or phone. (This message is shown after submitting the form.)</div>
+  <form action="../wholesale/index.html#received" method="get">
+    <fieldset><legend>Your business</legend>
+      <div class="row-2">
+        <div class="field"><label for="contact_name">Contact name <span class="req">*</span></label><input id="contact_name" name="contact_name" required></div>
+        <div class="field"><label for="business_name">Business name <span class="req">*</span></label><input id="business_name" name="business_name" required></div>
+      </div>
+      <div class="row-2">
+        <div class="field"><label for="w_email">Email <span class="req">*</span></label><input id="w_email" name="email" type="email" required></div>
+        <div class="field"><label for="w_phone">Phone <span class="req">*</span></label><input id="w_phone" name="phone" type="tel" required></div>
+      </div>
+      <div class="field"><label for="btype">Business type <span class="req">*</span></label>
+        <select id="btype" name="business_type" required><option value="">Select one</option><option>Retail store</option><option>Online reseller</option><option>Distributor</option><option>Other</option></select></div>
+    </fieldset>
+    <fieldset><legend>What you are interested in</legend>
+      <div class="field choice"><span class="small muted">Products of interest</span><label><input type="checkbox" name="interest" value="gaiavita"> Gaiavita</label><label><input type="checkbox" name="interest" value="penta-herbs"> Penta Herbs</label><label><input type="checkbox" name="interest" value="rushin"> Rushin</label><label><input type="checkbox" name="interest" value="poffee-kopi"> Poffee Kopi</label><label><input type="checkbox" name="interest" value="shindo-oil"> Shindo Oil</label></div>
+      <div class="field"><label for="volume">Estimated order volume (optional)</label>
+        <select id="volume" name="volume"><option value="">Not sure yet</option><option>Small</option><option>Medium</option><option>Large</option></select></div>
+      <div class="field"><label for="w_msg">Message</label><textarea id="w_msg" name="message"></textarea></div>
+    </fieldset>
+    <div class="field choice"><label><input type="checkbox" name="consent" required> I agree that JK Brands may use these details to respond to my inquiry. See the <a href="../privacy/index.html">Privacy Notice</a>. <span class="req">*</span></label></div>
+    <button class="btn" type="submit">Send inquiry</button>
+  </form>
+</div>
+<aside class="summary">
+  <h2 style="font-size:1.2rem">What to expect</h2>
+  <ol><li>You send the form.</li><li>Our team reviews it.</li><li>We contact you with wholesale details.</li></ol>
+  <p class="small muted">Wholesale pricing is not shown publicly. Looking to buy for yourself? <a href="../products/index.html">Browse retail products</a>.</p>
+</aside>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="../index.html"><span class="brand__mark" aria-hidden="true">JK</span><span class="brand__text">JK Brands<small>Health and Wellness</small></span></a>
+      <p>&copy; 2026 All rights reserved.</p>
+    </div>
+    <nav aria-label="Footer"><ul class="footer-links">
+      <li><a href="../index.html">Home</a></li><li><a href="../about/index.html">About Us</a></li><li><a href="../products/index.html">Products</a></li>
+      <li><a href="../wellness/index.html">Wellness</a></li><li><a href="../testimonials/index.html">Testimonials</a></li><li><a href="../wholesale/index.html">Wholesale</a></li>
+      <li><a href="../contact/index.html">Contact Us</a></li><li><a href="../privacy/index.html">Privacy Notice</a></li><li><a href="../terms/index.html">Terms</a></li>
+    </ul></nav>
+    <ul class="social" aria-label="Social links (placeholders)">
+      <li><a href="#" aria-label="Facebook">f</a></li><li><a href="#" aria-label="Instagram">ig</a></li><li><a href="#" aria-label="LinkedIn">in</a></li><li><a href="#" aria-label="TikTok">tt</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../assets/motion.js" defer></script>
+</body>
+</html>
