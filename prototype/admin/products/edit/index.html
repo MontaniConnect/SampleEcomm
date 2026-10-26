@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit product | Admin | JK Brands Health and Wellness</title>
+<meta name="description" content="Prototype page with placeholder content.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="proto-bar"><div class="wrap"><span>Prototype: placeholder content, no backend. Currency shown as XXX until confirmed.</span><span><a href="../../../flow.html">Review map</a> &middot; Admin is never linked from the public site</span></div></div>
+<div class="admin">
+  <aside class="admin__side" aria-label="Admin">
+    <a class="brand" href="../../../admin/index.html"><span class="brand__mark" aria-hidden="true">JK</span><span class="brand__text">JK Brands<small>Admin</small></span></a>
+    <nav aria-label="Admin sections"><h2>Overview</h2><ul><li><a href="../../../admin/index.html">Dashboard</a></li></ul><h2>Catalog</h2><ul><li><a href="../../../admin/products/index.html" aria-current="page">Products</a></li><li><a href="../../../admin/wellness-goals/index.html">Wellness goals</a></li></ul><h2>Content</h2><ul><li><a href="../../../admin/articles/index.html">Articles</a></li><li><a href="../../../admin/faqs/index.html">FAQs</a></li><li><a href="../../../admin/testimonials/index.html">Testimonials</a></li><li><a href="../../../admin/pages/index.html">Pages</a></li></ul><h2>Private records</h2><ul><li><a href="../../../admin/orders/index.html">Orders</a></li><li><a href="../../../admin/wholesale-inquiries/index.html">Wholesale inquiries</a></li></ul><h2>System</h2><ul><li><a href="../../../admin/settings/index.html">Settings</a></li></ul></nav>
+  </aside>
+  <div class="admin__main">
+    <div class="admin__top"><span class="muted small">Signed in as Admin User (placeholder)</span><a href="../../../admin/login/index.html">Sign out</a></div>
+    <main id="main" class="admin__body">
+      <div class="admin__title"><h1>Edit product</h1><div class="actions" style="margin:0"></div></div>
+      
+<form action="../../../admin/products/index.html" method="get" style="max-width:820px">
+  <fieldset><legend>Basics</legend>
+    <div class="field"><label for="pn">Name <span class="req">*</span></label><input id="pn" value="Gaiavita" required></div>
+    <div class="field"><label for="ps">Slug <span class="req">*</span></label><input id="ps" value="gaiavita" required><p class="hint">Must be unique. Changing it breaks existing links.</p></div>
+    <div class="field"><label for="psd">Short description <span class="req">*</span></label><input id="psd" value="Placeholder short description." required></div>
+    <div class="field"><label for="pd">Description <span class="req">*</span></label><textarea id="pd">Rich text editor placeholder.</textarea></div>
+    <div class="field"><label>Images <span class="req">*</span></label><div class="ph ph--16x9 ph--round" role="img" aria-label="Placeholder image: Drop images here or choose files">Drop images here or choose files</div></div>
+  </fieldset>
+  <fieldset><legend>Price</legend>
+    <div class="row-2">
+      <div class="field"><label for="pp">Retail price <span class="req">*</span></label><input id="pp" type="number" step="0.01" min="0.01" value="450.00" required></div>
+      <div class="field"><label for="pc">Currency <span class="req">*</span></label><select id="pc"><option>XXX (to be confirmed)</option></select></div>
+    </div>
+  </fieldset>
+  <fieldset><legend>Relationships</legend>
+    <div class="field choice"><span class="small muted">Wellness goals (at least one) <span class="req">*</span></span><label><input type="checkbox" name="goals" value="daily-wellness" checked> Daily Wellness</label><label><input type="checkbox" name="goals" value="digestive-support"> Digestive Support</label><label><input type="checkbox" name="goals" value="joint-muscle-comfort"> Joint and Muscle Comfort</label><label><input type="checkbox" name="goals" value="herbal-drinks"> Herbal Drinks</label></div>
+    <div class="field choice"><span class="small muted">Related FAQs</span><label><input type="checkbox" name="faqs"> Where can I find ingredients and directions?</label><label><input type="checkbox" name="faqs"> Are these products a substitute for medical advice?</label><label><input type="checkbox" name="faqs"> Which payment options are available?</label></div>
+  </fieldset>
+  <fieldset><legend>Product information</legend>
+    <div class="field"><label for="pi">Ingredients</label><textarea id="pi"></textarea></div>
+    <div class="field"><label for="pdir">Directions</label><textarea id="pdir"></textarea></div>
+    <div class="field"><label for="pw2">Warnings</label><textarea id="pw2"></textarea></div>
+  </fieldset>
+  <fieldset><legend>Publishing</legend>
+    <div class="row-2">
+      <div class="field"><label for="pst">Status</label><select id="pst"><option>Draft</option><option>Published</option></select></div>
+      <div class="field"><label for="pcr">Claims reviewed on</label><input id="pcr" type="date"><p class="hint">Proposed gate before publishing.</p></div>
+    </div>
+    <div class="field choice"><label><input type="checkbox" name="featured" checked> Featured on the home page</label></div>
+  </fieldset>
+  <fieldset><legend>SEO (optional)</legend>
+    <div class="field"><label for="pseo">SEO title</label><input id="pseo"></div>
+    <div class="field"><label for="pseod">SEO description</label><textarea id="pseod"></textarea></div>
+  </fieldset>
+  <div class="actions"><button class="btn" type="submit">Save product</button><a class="btn btn--outline" href="../../../admin/products/index.html">Cancel</a></div>
+</form>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

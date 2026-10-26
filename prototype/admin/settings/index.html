@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settings | Admin | JK Brands Health and Wellness</title>
+<meta name="description" content="Prototype page with placeholder content.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="proto-bar"><div class="wrap"><span>Prototype: placeholder content, no backend. Currency shown as XXX until confirmed.</span><span><a href="../../flow.html">Review map</a> &middot; Admin is never linked from the public site</span></div></div>
+<div class="admin">
+  <aside class="admin__side" aria-label="Admin">
+    <a class="brand" href="../../admin/index.html"><span class="brand__mark" aria-hidden="true">JK</span><span class="brand__text">JK Brands<small>Admin</small></span></a>
+    <nav aria-label="Admin sections"><h2>Overview</h2><ul><li><a href="../../admin/index.html">Dashboard</a></li></ul><h2>Catalog</h2><ul><li><a href="../../admin/products/index.html">Products</a></li><li><a href="../../admin/wellness-goals/index.html">Wellness goals</a></li></ul><h2>Content</h2><ul><li><a href="../../admin/articles/index.html">Articles</a></li><li><a href="../../admin/faqs/index.html">FAQs</a></li><li><a href="../../admin/testimonials/index.html">Testimonials</a></li><li><a href="../../admin/pages/index.html">Pages</a></li></ul><h2>Private records</h2><ul><li><a href="../../admin/orders/index.html">Orders</a></li><li><a href="../../admin/wholesale-inquiries/index.html">Wholesale inquiries</a></li></ul><h2>System</h2><ul><li><a href="../../admin/settings/index.html" aria-current="page">Settings</a></li></ul></nav>
+  </aside>
+  <div class="admin__main">
+    <div class="admin__top"><span class="muted small">Signed in as Admin User (placeholder)</span><a href="../../admin/login/index.html">Sign out</a></div>
+    <main id="main" class="admin__body">
+      <div class="admin__title"><h1>Settings</h1><div class="actions" style="margin:0"></div></div>
+      
+<form action="../../admin/settings/index.html" method="get" style="max-width:720px">
+  <fieldset><legend>Contact and social</legend>
+    <div class="field"><label for="s1">Contact email</label><input id="s1" value="hello@example.com"></div>
+    <div class="field"><label for="s2">Phone</label><input id="s2" value="+00 000 000 0000"></div>
+    <div class="field"><label for="s3">Messenger link</label><input id="s3" value="https://m.me/placeholder"></div>
+    <div class="row-2"><div class="field"><label for="s4">Facebook</label><input id="s4"></div><div class="field"><label for="s5">Instagram</label><input id="s5"></div></div>
+  </fieldset>
+  <fieldset><legend>Ordering</legend>
+    <div class="row-2">
+      <div class="field"><label for="s6">Default currency</label><select id="s6"><option>XXX (to be confirmed)</option></select></div>
+      <div class="field"><label for="s7">Maximum quantity per product</label><input id="s7" type="number" min="1" value="20"></div>
+    </div>
+    <div class="field"><label for="s8">Staff notification emails</label><input id="s8" value="orders@example.com"><p class="hint">Separate several addresses with commas.</p></div>
+  </fieldset>
+  <button class="btn" type="submit">Save settings</button>
+</form>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>
